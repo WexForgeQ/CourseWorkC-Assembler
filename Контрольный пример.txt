@@ -1,0 +1,43 @@
+string func f1()
+{
+get 'gfg';
+};
+
+snum func f2(snum a, snum b)
+{
+var snum res = a + b;
+get res;
+};
+
+main
+{
+var string tf1;
+tf1 = f1();
+out 'Результат функции string: ';
+outln tf1;
+var snum tf2
+tf2 = f2(2,3);
+out 'Результат функции snum: ';
+outln tf2;
+var string st = 'string';
+out 'строка: ';
+outln st;
+var string st2 = 'gf';
+if(1 < 2)
+{
+outln 'if';
+}
+else
+{
+outln 'else';
+}
+st = concat(st,st2);
+out 'Тест конкантенации: ';
+outln st;
+st = strcp(st,'строка2');
+out 'Тест копирования: ';
+outln st;
+out 'Тест польской записи: ';
+var snum test = 2 + 2 * 2 - 2 / 2 + 2 * 2;
+outln test;
+}
