@@ -1,0 +1,28 @@
+﻿Сборка начата 04.01.2023 04:46:07.
+Уровень детализации журнала: Normal.     1>Проект "D:\kurs\NAElib\NAElib.vcxproj" в узле 2 (целевые объекты Rebuild).
+     1>_PrepareForClean:
+         Файл "Debug\NAElib.tlog\NAElib.lastbuildstate" удаляется.
+       InitializeBuildStatus:
+         Создание "Debug\NAElib.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"D:\kurs\NAE-2022\Debug\NAElib.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt Source.cpp
+         Source.cpp
+     1>D:\kurs\NAElib\Source.cpp(75): warning C4172: возвращение адреса локальной или временной переменной : result
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\Lib.exe /OUT:"D:\kurs\NAE-2022\Debug\NAElib.lib" /NOLOGO /MACHINE:X86 Debug\Source.obj
+         NAElib.vcxproj -> D:\kurs\NAE-2022\Debug\NAElib.lib
+       FinalizeBuildStatus:
+         Файл "Debug\NAElib.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\NAElib.tlog\NAElib.lastbuildstate".
+     1>Сборка проекта "D:\kurs\NAElib\NAElib.vcxproj" завершена (целевые объекты Rebuild).
+
+Сборка успешно завершена.
+
+       "D:\kurs\NAElib\NAElib.vcxproj" (целевой объект Rebuild ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\kurs\NAElib\Source.cpp(75): warning C4172: возвращение адреса локальной или временной переменной : result
+
+    Предупреждений: 1
+    Ошибок: 0
+
+Прошло времени 00:00:01.32
