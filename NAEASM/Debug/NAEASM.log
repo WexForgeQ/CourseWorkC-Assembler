@@ -1,0 +1,29 @@
+﻿Сборка начата 04.01.2023 15:55:16.
+Уровень детализации журнала: Normal.     1>Проект "D:\kurs\NAEASM\NAEASM.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Создание "Debug\NAEASM.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       _MASM:
+         Assembling ..\NAE-2022\Debug\out.asm...
+         cmd.exe /C "C:\Users\hardn\AppData\Local\Temp\tmp9c4051e2072f49dcbbf536fccf128515.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\out.obj" /W3 /errorReport:prompt  /Ta"..\NAE-2022\Debug\out.asm"
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\kurs\NAE-2022\Debug\NAEASM.exe" /INCREMENTAL /ILK:"Debug\NAEASM.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:/NODEFAULTLIB:library /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\kurs\NAE-2022\Debug\NAEASM.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\kurs\NAE-2022\Debug\NAEASM.lib" /MACHINE:X86 /Force:Multiple D:\kurs\NAE-2022\Debug\NAElib.lib Debug\out.obj
+     1>LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/FORCE"
+     1>LINK : warning LNK4098: библиотека по умолчанию "libucrt.lib" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+         NAEASM.vcxproj -> D:\kurs\NAE-2022\Debug\NAEASM.exe
+       FinalizeBuildStatus:
+         Файл "Debug\NAEASM.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\NAEASM.tlog\NAEASM.lastbuildstate".
+     1>Сборка проекта "D:\kurs\NAEASM\NAEASM.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "D:\kurs\NAEASM\NAEASM.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект Link) -> 
+         LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/FORCE"
+         LINK : warning LNK4098: библиотека по умолчанию "libucrt.lib" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+
+    Предупреждений: 2
+    Ошибок: 0
+
+Прошло времени 00:00:01.85
