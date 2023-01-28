@@ -1,0 +1,109 @@
+.586
+.model flat, stdcall
+includelib libucrt.lib
+includelib kernel32.lib
+includelib ../NAE-2022/Debug/NAElib2.lib
+ExitProcess PROTO :DWORD
+
+EXTRN strcat: proc
+EXTRN strcopy: proc
+EXTRN BREAKL: proc
+EXTRN OutputInt: proc
+EXTRN OutputStr: proc
+EXTRN OutputIntLn: proc
+EXTRN OutputStrLn: proc
+EXTRN OutputChar: proc
+EXTRN OutputCharLn: proc
+
+.stack 4096
+
+.const
+	L1 SDWORD 2
+	L2 BYTE "1", 0
+	L3 SDWORD 1
+	L4 BYTE "fdsfds", 0
+	L5 SDWORD 4
+	L6 SDWORD 6
+	L7 BYTE 'f', 0
+	L8 SDWORD 3
+
+.data
+	buffer BYTE 256 dup(0)
+	fa SDWORD 0
+	mains SDWORD 0
+	maina SDWORD 0
+	mainb DWORD ?
+	mainc SDWORD 0
+	maind DWORD ?
+	maing DWORD ?
+
+.code
+
+f PROC fb : DWORD, fc : DWORD
+	push L1
+	pop fa
+	push 1
+	jmp local0
+local0:
+	pop eax
+	ret
+	ret
+f ENDP
+
+main PROC
+	push L3
+	pop maina
+	push offset L4
+	pop mainb
+	push maina
+	push L5
+	pop eax
+	pop ebx
+	add eax, ebx
+	push eax
+	push L6
+	push maina
+	pop eax
+	pop ebx
+	mul ebx
+	push eax
+	pop ebx
+	pop eax
+	sub eax, ebx
+	push eax
+	pop mainc
+	push offset L7
+	pop maind
+	push mainb
+	push mainb
+	pop edx
+	pop edx
+	push mainb
+	push mainb
+	call f
+	push eax
+	pop maing
+	push maina
+	push L3
+	pop ebx
+	pop eax
+	cdq
+	idiv ebx
+	push eax
+	pop maina
+	push L8
+	pop maina
+	mov eax, maina
+	cmp eax, L1
+	jge m0
+	jle m1
+	je m1
+	push maina
+	call OutputInt
+e0:
+	push L8
+	pop maina
+e1:
+	call ExitProcess
+main ENDP
+end main
