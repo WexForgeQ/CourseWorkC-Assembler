@@ -1,0 +1,22 @@
+﻿Сборка начата 02.01.2023 15:33:37.
+Уровень детализации журнала: Normal.     1>Проект "D:\kurs\NAELib2\NAELib2.vcxproj" в узле 2 (целевые объекты Rebuild).
+     1>_PrepareForClean:
+         Файл "Debug\NAELib2.tlog\NAELib2.lastbuildstate" удаляется.
+       InitializeBuildStatus:
+         Создание "Debug\NAELib2.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"pch.h" /Fp"Debug\NAELib2.pch" /Fo"Debug\\" /Fd"D:\kurs\NAE-2022\Debug\NAELib2.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt NAELib2.cpp
+         NAELib2.cpp
+     1>D:\kurs\NAELib2\NAELib2.cpp(40,1): fatal error C1010: непредвиденный конец файла во время поиска предкомпилированного заголовка. Возможно, вы забыли добавить директиву "#include "pch.h"" в источник.
+     1>Сборка проекта "D:\kurs\NAELib2\NAELib2.vcxproj" завершена (целевые объекты Rebuild) с ошибкой.
+
+Ошибка сборки.
+
+       "D:\kurs\NAELib2\NAELib2.vcxproj" (целевой объект Rebuild ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\kurs\NAELib2\NAELib2.cpp(40,1): fatal error C1010: непредвиденный конец файла во время поиска предкомпилированного заголовка. Возможно, вы забыли добавить директиву "#include "pch.h"" в источник.
+
+    Предупреждений: 0
+    Ошибок: 1
+
+Прошло времени 00:00:00.10
